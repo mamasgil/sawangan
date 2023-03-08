@@ -1,0 +1,1 @@
+[28-Sep-2018 18:24:07 Asia/Bangkok] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/smkh1647/public_html/spp/page/pengguna/hak-akses.php:8) in /home/smkh1647/public_html/spp/page/pengguna/index.php on line 104

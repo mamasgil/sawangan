@@ -1,0 +1,13 @@
+hayyy...nie usernya
+
+Superuser :
+User : admin@gmail.com
+Password : admin
+
+Pegawai :
+user : pegawai@gmail.com
+Password : pegawai
+
+Walas :
+user : cek aja db nya (email)
+password : 20535434

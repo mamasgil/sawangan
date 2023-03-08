@@ -1,0 +1,51 @@
+tbl_siswa > tbl_warga
+	nis > niw
+	jekel_siswa > jekel_warga
+	id_siswa > id_warga
+	nama_siswa > nama_warga
+	alamat_siswa > alamat_warga
+	foto_siswa > foto_warga
+	id_kelas > id_rumah
+	aktif_siswa > aktif_warga
+	angkatan_siswa > angkatan_warga
+
+tbl_transaksi
+	id_siswa > id_warga
+	id_kelas > id_rumah
+
+tbl_kelas
+	id_kelas > id_rumah
+	tingkat_kelas > tingkat_rumah
+	nama_kelas > nama_rumah
+tbl_pembayaran
+	id_kelas > id_rumah
+
+tbl_jurusan
+	id_jurusan > id_blok
+	nama_jurusan > nama_blok
+	diskripsi_blok > deskripsi_blok
+
+
+Notice: Undefined index: warga in C:\xampp\htdocs\sawangan\layout\sidebar.php on line 76
+
+
+<option value="10">X</option>
+                                    <option value="11">XI</option>
+                                    <option value="12">XII</option>
+
+									<div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">rumah</label>
+                            <div class="col-md-6 col-xs-12"> 
+                                <select class="form-control select" name="id_rumah">
+                                    <?php
+                                        $query_rumah = $config->getData("SELECT * FROM tbl_rumah");
+
+                                        foreach ($query_rumah as $qk) {
+                                    ?>
+                                            <option value="<?= $qk['id_rumah']; ?>"><?= $config->format_romawi($qk['tingkat_rumah']); ?> <?= $qk['nama_rumah']; ?></option>
+                                    <?php
+                                        }
+                                    ?>
+                                </select>    
+                            </div>
+                        </div>
